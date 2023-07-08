@@ -1,20 +1,23 @@
-function App() {
+import React, {useState} from "react";
+import Heading from './Heading';
+import '/App.css';
 
-  function handleClick() { 
-    let randomNum = Math.floor(Math.random() * 3) + 1;
-    console.log(randomNum);
-    let userInput = prompt('type a number'); 
-    alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
+function App() {
+  const [word,setWord] = React.useState('Eat')
+
+  function handleClick(){
+    setWord('Drink')
+
   }
-  return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button onClick={ handleClick}>
-        Guess the number between 1 and 3.
-      </button>
+ 
+  return(
+    <div className="App">
+      <Heading message={word+"at Little Lemon"}/>
+      <button onClick={handleClick}>Click Here!</button>
     </div>
   );
 }
+
 
 
 
