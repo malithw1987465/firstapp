@@ -1,5 +1,5 @@
 function ModeToggler(){
-    const darkModeOn=true;
+    const darkModeOn=false;
     const darkMode=<h1>Dark Mode is on</h1>
     const lightMode=<h1>Light Mode is on</h1>
 return(
