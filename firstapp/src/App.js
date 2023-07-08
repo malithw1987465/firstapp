@@ -1,23 +1,11 @@
-import logo from './logo.svg';
+import Btn from './Btn';
 import './App.css';
-const Style={
-  color:"#282c34",
-}
-function Header(){
-  return(
-    <div className="home" style={Style}>
-        <nav>
-          <ul>
-            <li >Home</li>
-            <li>About</li>
-            <li>Quiz</li>
-          </ul>
-        </nav>
-    </div>
-  );
-}
+
+
 function App() {
- return <Header/>;
+ return(
+  <Btn/>
+ );
 }
 
 export default App;
