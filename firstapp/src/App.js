@@ -1,4 +1,5 @@
 import React from "react";
+import HomePage from "./HomePage";
 
 function App() {
   return(
@@ -6,7 +7,7 @@ function App() {
     <h1>
       Hellooo.. Im Malith..
     </h1>
-    <button>Click Me</button>
+    <HomePage/>
   </div>
   );
 }
